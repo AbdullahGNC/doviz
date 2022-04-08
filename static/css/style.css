@@ -1,0 +1,57 @@
+body{
+    background: no-repeat center fixed url(/static/images/etherum.png);
+    background-size: 200px
+}
+
+
+        #ana{
+         padding-left: 690px;
+        
+            
+        }
+        .nav-link {
+            font-style: oblique;
+        }
+        #baslik{
+            font-style: italic;
+        }
+        #txt{
+            
+            display: inline-block;
+            padding-left: 540px;
+        }
+        #alt{
+            margin-left: 500px;
+
+        }
+        #altin{
+            display: inline-block;
+        }
+
+        
+   #piy{
+       padding-left:  540px;
+       padding-top: 30px;
+       font-style: italic;
+       /* display: inline-block; */
+
+   }
+   #W4418{
+       padding-left: 540px;
+       display: inline-block;
+      
+   }
+   #W1489{
+  padding-left: 540px;
+  
+  
+
+   }
+   #kurlar{
+       width: 540px;
+   }
+
+   
+
+   
+
