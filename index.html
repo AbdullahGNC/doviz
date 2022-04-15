@@ -181,75 +181,63 @@
         </div>
         <!-- cevirici -->
         <div class=" form1 col shadow">
-            <div title="Serbest Piyasa - Güncelleme: 8/2/2019 19:26:02" class="doviz_cevirici">
-              <ul>
-                <li class="miktar"><b>Miktarı Giriniz:</b></li>
-                <li class="giris">
-                  <input name="para" id="para" onkeyup="doviz()" type="text" autocomplete="off" />
-                </li>
-                <li class="birim">
-                  <select id="birim" onkeyup="doviz()" onchange="doviz()">
-                    <option selected="selected" value="TL">Türk Lirası</option>
-                    <option value="USD">ABD Doları</option>
-                    <option value="EUR">Euro</option>
-                    <option value="GBP">İngiliz Sterlini</option>
-                    <option value="JPY">Japon Yeni</option>
-                    <option value="CHF">İsviçre Frangı</option>
-                    <option value="DKK">Danimarka Kronu</option>
-                    <option value="SEK">İsveç Kronu</option>
-                    <option value="NOK">Norveç Kronu</option>
-                    <option value="SAR">Suudi Arabistan Riyali</option>
-                    <option value="AUD">Avustralya Doları</option>
-                    <option value="CAD">Kanada Doları</option>
-                    <option value="RUB">Rus Rublesi</option>
-                    <option value="CNY">Çin Yuanı Renminbi</option>
-                    <option value="ZAR">Güney Afrika Randı</option>
-                    <option value="MXN">Meksika Pezosu</option>
-                    <option value="NZD">Yeni Zelanda Doları</option>
-                    <option value="IQD">Irak Dinarı</option>
-                    <option value="AED">Birleşik Arap Emirlikleri Dirhemi</option>
-                    <option value="KWD">Kuveyt Dinarı</option>
-                    <option value="BHD">Bahreyn Dinarı</option>
-                  </select>
-                </li>
-                <li class="cevir" id="birimleri_ters_cevir">
-                  <input name="ters_cevir" id="ters_cevir" onclick="tersdoviz()" type="button"
-                    value="Birimleri Ters Çevir" />
-                </li>
-                <li class="birim2">
-                  <select id="birim2" onkeyup="doviz()" onchange="doviz()">
-                    <option value="TL">Türk Lirası</option>
-                    <option selected="selected" value="USD">ABD Doları</option>
-                    <option value="EUR">Euro</option>
-                    <option value="GBP">İngiliz Sterlini</option>
-                    <option value="JPY">Japon Yeni</option>
-                    <option value="CHF">İsviçre Frangı</option>
-                    <option value="DKK">Danimarka Kronu</option>
-                    <option value="SEK">İsveç Kronu</option>
-                    <option value="NOK">Norveç Kronu</option>
-                    <option value="SAR">Suudi Arabistan Riyali</option>
-                    <option value="AUD">Avustralya Doları</option>
-                    <option value="CAD">Kanada Doları</option>
-                    <option value="RUB">Rus Rublesi</option>
-                    <option value="CNY">Çin Yuanı Renminbi</option>
-                    <option value="ZAR">Güney Afrika Randı</option>
-                    <option value="MXN">Meksika Pezosu</option>
-                    <option value="NZD">Yeni Zelanda Doları</option>
-                    <option value="IQD">Irak Dinarı</option>
-                    <option value="AED">Birleşik Arap Emirlikleri Dirhemi</option>
-                    <option value="KWD">Kuveyt Dinarı</option>
-                    <option value="BHD">Bahreyn Dinarı</option>
-                  </select>
-                </li>
-                <li class="sonuc"><b id="sonuctxt">Sonuç:</b></li>
-                <input name="para2" id="para2" onfocus="blur()" type="text" />
-              </ul>
-            </div>
-        </div>
+
+    <h1>Currency Converter</h1>
+    <div class="">
+      <label for="Amount">Amount</label>
+      <label for="From">From</label>
+      <label for="To">To</label>
+    </div>
+    <input type="number" name="Amount" value="">
+    <select class="money1" name="money1"> -->
+      <option value="AUD" class= "AUD">AUD</option><option value="BGN"class="BGN">BGN</option>
+      <option value="BRL" class="BRL">BRL</option><option value="CAD"class = "CAD">CAD</option>
+      <option value="CHF" class = "CHF">CHF</option><option value="CNY"class = "CNY">CNY</option>
+      <option value="CZK" class = "CZK">CZK</option><option value="DKK"class = "DKK">DKK</option>
+      <option value="EUR"class = "EUR">EURO</option><option value="GBP" class = "GBP">GBP</option>
+      <option value="HKD"class = "HKD">HKD</option><option value="HRK"class = "HRK">HRK</option>
+      <option value="HUF"class = "HUF">HUF</option><option value="IDR"class = "IDR">IDR</option>
+      <option value="ILS"class = "ILS">ILS</option><option value="INR"class = "INR">INR</option>
+      <option value="ISK"class = "ISK">ISK</option><option value="JPY"class = "JPY">JPY</option>
+      <option value="KRW"class = "KRW">KRW</option><option value="MXN"class = "MXN">MXN</option>
+      <option value="MYR"class = "MYR">MYR</option><option value="NOK"class = "NOK">NOK</option>
+      <option value="NZD"class = "NZD">NZD</option><option value="PHP"class = "PHP">PHP</option>
+      <option value="PLN"class = "PLN">PLN</option><option value="RON"class = "RON">RON</option>
+      <option value="RUB"class = "RUB">RUB</option><option value="SEK"class = "SEK">SEK</option>
+      <option value="SGD"class = "SGD">SGD</option><option value="THB"class = "THB">THB</option>
+      <option value="TRY"class = "TRY">TRY</option><option value="USD"class = "USD" >USD</option>
+      <option value="ZAR"class = "ZAR">ZAR</option>
+    </select>
+    <select class="money2" name="money2"> -->
+      <option value="AUD" class= "AUD">AUD</option><option value="BGN"class="BGN">BGN</option>
+      <option value="BRL" class="BRL">BRL</option><option value="CAD"class = "CAD">CAD</option>
+      <option value="CHF" class = "CHF">CHF</option><option value="CNY"class = "CNY">CNY</option>
+      <option value="CZK" class = "CZK">CZK</option><option value="DKK"class = "DKK">DKK</option>
+      <option value="EUR"class = "EUR">EURO</option><option value="GBP" class = "GBP">GBP</option>
+      <option value="HKD"class = "HKD">HKD</option><option value="HRK"class = "HRK">HRK</option>
+      <option value="HUF"class = "HUF">HUF</option><option value="IDR"class = "IDR">IDR</option>
+      <option value="ILS"class = "ILS">ILS</option><option value="INR"class = "INR">INR</option>
+      <option value="ISK"class = "ISK">ISK</option><option value="JPY"class = "JPY">JPY</option>
+      <option value="KRW"class = "KRW">KRW</option><option value="MXN"class = "MXN">MXN</option>
+      <option value="MYR"class = "MYR">MYR</option><option value="NOK"class = "NOK">NOK</option>
+      <option value="NZD"class = "NZD">NZD</option><option value="PHP"class = "PHP">PHP</option>
+      <option value="PLN"class = "PLN">PLN</option><option value="RON"class = "RON">RON</option>
+      <option value="RUB"class = "RUB">RUB</option><option value="SEK"class = "SEK">SEK</option>
+      <option value="SGD"class = "SGD">SGD</option><option value="THB"class = "THB">THB</option>
+      <option value="TRY"class = "TRY">TRY</option><option value="USD"class = "USD" >USD</option>
+      <option value="ZAR"class = "ZAR">ZAR</option>
+    </select>
+    <button type="submit" name="button" onclick = "makeConvert()">Convert</button>
+    <div class="box-1">
+      <span class="response"><span>
+    </div>
+    <div class="box-2">
+    </div>
       </div>
 
-
+      <script src="static/js/dovizCevirici.js"></script>
       <script src="static/js/app.js"></script>
+      <script src="./static/js/dovizCevirici.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
