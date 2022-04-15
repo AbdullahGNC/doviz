@@ -32,7 +32,9 @@ function makeConvert() {
       }
       let selector = Selector2 / Selector1;
       let result = amount * selector;
-      document.getElementById("sonuc").value = result.toString().slice(0,5) + " " + selector2;
+
+      document.getElementById("sonuc").value =
+        result.toFixed(2) + " " + selector2;
     }
   };
   httpRequest.open(
