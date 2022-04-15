@@ -47,27 +47,27 @@
           <tr>
             <td id="dovIsim">USD</td>
             <td id="dovSatisUsd">#</td>
-            <td id="dovDegisimUsd">%0,05</td>
+            <td id="dovDegisimUsd">#</td>
           </tr>
           <tr>
             <td id="dovIsim">EUR</td>
-            <td id="dovSatisEur">16,0958</td>
-            <td id="dovDegisimEur">%0,05</td>
+            <td id="dovSatisEur">#</td>
+            <td id="dovDegisimEur">#</td>
           </tr>
           <tr>
             <td id="dovIsim">GBP</td>
-            <td id="dovSatisGbp">19,2504</td>
-            <td id="dovDegisimGbp">%0,05</td>
+            <td id="dovSatisGbp">#</td>
+            <td id="dovDegisimGbp">#</td>
           </tr>
           <tr>
             <td id="dovIsim">CHF</td>
-            <td id="dovSatisChf">15,7851</td>
-            <td id="dovDegisimChf">%0,05</td>
+            <td id="dovSatisChf">#</td>
+            <td id="dovDegisimChf">#</td>
           </tr>
           <tr>
             <td id="dovIsim">CAD</td>
-            <td id="dovSatisCad">15,7851</td>
-            <td id="dovDegisimCad">%0,04</td>
+            <td id="dovSatisCad">#</td>
+            <td id="dovDegisimCad">#</td>
           </tr>
         </table>
       </div>
@@ -80,28 +80,28 @@
           </tr>
           <tr>
             <td id="dovIsim">Gram Altın</td>
-            <td id="dovSatisG">923,44</td>
-            <td id="dovDegisimG">%0,05</td>
+            <td id="dovSatisG">#</td>
+            <td id="dovDegisimG">#</td>
           </tr>
           <tr>
             <td id="dovIsim">Çeyrek Altın</td>
-            <td id="dovSatisC">923,44</td>
-            <td id="dovDegisimC">%0,05</td>
+            <td id="dovSatisC">#</td>
+            <td id="dovDegisimC">#</td>
           </tr>
           <tr>
             <td id="dovIsim">Yarım Altın</td>
-            <td id="dovSatisY">923,44</td>
-            <td id="dovDegisimY">%0,05</td>
+            <td id="dovSatisY">#</td>
+            <td id="dovDegisimY">#</td>
           </tr>
           <tr>
             <td id="dovIsim">Tam Altın</td>
-            <td id="dovSatisT">923,44</td>
-            <td id="dovDegisimT">%0,05</td>
+            <td id="dovSatisT">#</td>
+            <td id="dovDegisimT">#</td>
           </tr>
           <tr>
             <td id="dovIsim">Ata Altın</td>
-            <td id="dovSatisA">$1.948,13</td>
-            <td id="dovDegisimA">%0,04</td>
+            <td id="dovSatisA">#</td>
+            <td id="dovDegisimA">#</td>
           </tr>
         </table>
       </div>
@@ -116,28 +116,28 @@
             </tr>
             <tr>
               <td id="dovIsim">BTC</td>
-              <td id="dovSatisBtc">$42.450,00</td>
-              <td id="dovDegisimBtc">%0,05</td>
+              <td id="dovSatisBtc">#</td>
+              <td id="dovDegisimBtc">#</td>
             </tr>
             <tr>
               <td id="dovIsim">ETH</td>
-              <td id="dovSatisEth">$3.210,4</td>
-              <td id="dovDegisimEth">%0,05</td>
+              <td id="dovSatisEth">#</td>
+              <td id="dovDegisimEth">#</td>
             </tr>
             <tr>
               <td id="dovIsim">USDT</td>
-              <td id="dovSatisUsdt">$1,0010</td>
-              <td id="dovDegisimUsdt">%0,05</td>
+              <td id="dovSatisUsdt">#</td>
+              <td id="dovDegisimUsdt">#</td>
             </tr>
             <tr>
               <td id="dovIsim">BNB</td>
-              <td id="dovSatisBnb">$426,4</td>
-              <td id="dovDegisimBnb">%0,05</td>
+              <td id="dovSatisBnb">#</td>
+              <td id="dovDegisimBnb">#</td>
             </tr>
             <tr>
               <td id="dovIsim">USDC</td>
-              <td id="dovSatisUsdc">$1,0000</td>
-              <td id="dovDegisimUsdc">%0,04</td>
+              <td id="dovSatisUsdc">#</td>
+              <td id="dovDegisimUsdc">#</td>
             </tr>
           </table>
         </div>
@@ -187,7 +187,7 @@
       <label for="Amount">Miktarı</label>
       <label for="From">Giriniz:</label>
     </div>
-    <input onkeydown="makeConvert()" onkeyup="makeConvert()" onkeypress="makeConvert()" onchange='makeConvert()' id="Miktar"type="number" name="Amount" value="">
+    <input min="0" onkeydown="makeConvert()" onkeyup="makeConvert()" onkeypress="makeConvert()" onchange='makeConvert()' id="Miktar"type="number" name="Amount" value="">
     <select class="money1" name="money1" >
       <option value="AUD" class= "AUD">Avustralya Doları</option><option value="BGN"class="BGN">Bulgar Levası</option>
       <option value="BRL" class="BRL">Brezilya Reali</option><option value="CAD"class = "CAD">Kanada Doları</option>
@@ -228,7 +228,7 @@
       <option value="ZAR"class = "ZAR">Güney Afrika Randı</option>
     </select>
     <div class="box-1">
-      <input id='sonuc'class="response" disabled>
+      <input id='sonuc'class="response" onfocus="blur()" type="text">
     </div>
     
 

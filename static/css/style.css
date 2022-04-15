@@ -94,8 +94,15 @@ b{
     outline: none;
     height: 40px;
 }
-#tabloBaslik4{
+#sonuc{
+    width: 300px;
+    padding: 6px 10px;
     
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    height: 40px;
 }
 
 
