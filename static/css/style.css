@@ -1,4 +1,3 @@
-
 body {
     background-color: white !important;
     font-family: 'Segoe UI';
@@ -13,7 +12,7 @@ body {
 
     background-color: whitesmoke !important;
     border: 1px solid;
-    border-radius:15px;
+    border-radius: 15px;
 }
 
 
@@ -29,52 +28,57 @@ a:visited {
     color: steelblue;
 }
 
-#para{
-    width: 25   0px;
-} 
+#para {
+    width: 25 0px;
+}
 
-b{
+b {
     font-size: 17px;
 }
 
 
-.deneme{
+.deneme {
     border: 1px solid;
-    border-radius:15px;
+    border-radius: 15px;
     margin: 5px;
-    
+
 }
-#dovIsim{
+
+#dovIsim {
     color: blue;
 }
-#Baslik{
+
+#Baslik {
     color: #B6B8B4;
 }
-#dovDegisim{
+
+#dovDegisim {
     color: rgb(2, 202, 92)
 }
 
-.money1{
+.money1 {
     width: 300px;
     padding: 6px 10px;
     margin-bottom: 18px;
-    border:3px solid #ccc;
+    border: 3px solid #ccc;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
     height: 40px;
 }
-.money2{
+
+.money2 {
     width: 300px;
     padding: 6px 10px;
     margin-bottom: 18px;
-    border:3px solid #ccc;
+    border: 3px solid #ccc;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
     height: 40px;
 }
-#Miktar{
+
+#Miktar {
     width: 300px;
     padding: 6px 10px;
     margin: 18px 0;
@@ -84,20 +88,11 @@ b{
     outline: none;
     height: 40px;
 }
-#para2{
+
+#para2 {
     width: 300px;
     padding: 6px 10px;
-    
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    height: 40px;
-}
-#sonuc{
-    width: 300px;
-    padding: 6px 10px;
-    
+
     border: 3px solid #ccc;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -105,5 +100,20 @@ b{
     height: 40px;
 }
 
+#sonuc {
+    width: 300px;
+    padding: 6px 10px;
 
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    height: 40px;
+}
 
+#dovizTablo{
+   margin-left: 110px;
+}
+#altinTablo{
+    margin-left: 110px;
+}

@@ -34,7 +34,7 @@ function dovizEkle(USD, EUR, GBP, CHF, CAD) {
   sterlin.textContent = GBP.toString().slice(0, 5) + '₺';
 
   const isvicrefrank = document.getElementById("dovSatisChf");
-  isvicrefrank.textContent = CHF.toString().slice(0, 5) + '₺' ;
+  isvicrefrank.textContent = CHF.toString().slice(0, 5) + '₺';
 
   const candollar = document.getElementById("dovSatisCad");
   candollar.textContent = CAD.toString().slice(0, 5) + '₺';
@@ -107,42 +107,42 @@ function kriptoKuru(kriptoapi) {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
-      const BTC = data.BTC.satis 
+      const BTC = data.BTC.satis
       const ETH = data.ETH.satis
       const USDT = data.USDT.satis
       const BNB = data.BNB.satis
       const USDC = data.USDC.satis
 
-      const btcDegisim= data.BTC.degisim
-      const ethDegisim= data.ETH.degisim
+      const btcDegisim = data.BTC.degisim
+      const ethDegisim = data.ETH.degisim
       const usdtDegisim = data.USDT.degisim
-      const bnbDegisim= data.BNB.degisim
+      const bnbDegisim = data.BNB.degisim
       const usdcDegisim = data.USDC.degisim
 
       kriptoDegisim(btcDegisim, ethDegisim, usdtDegisim, bnbDegisim, usdcDegisim);
-      kriptoEkle(BTC,ETH,USDT,BNB,USDC)
+      kriptoEkle(BTC, ETH, USDT, BNB, USDC)
     })
     .catch((err) => console.warn(err));
 }
 
-function kriptoEkle(BTC,ETH,USDT,BNB,USDC) {
+function kriptoEkle(BTC, ETH, USDT, BNB, USDC) {
   const bitcoin = document.getElementById("dovSatisBtc");
-  bitcoin.textContent = '$' + BTC.toString().slice(0, 8)   ;
+  bitcoin.textContent = '$' + BTC.toString().slice(0, 8);
 
   const ether = document.getElementById("dovSatisEth");
-  ether.textContent = '$' +ETH.toString().slice(0, 8) ;
+  ether.textContent = '$' + ETH.toString().slice(0, 8);
 
   const usdtether = document.getElementById("dovSatisUsdt");
-  usdtether.textContent = '$' +USDT.toString().slice(0, 8) ;
+  usdtether.textContent = '$' + USDT.toString().slice(0, 8);
 
   const binance = document.getElementById("dovSatisBnb");
-  binance.textContent = '$' +BNB.toString().slice(0, 8) ;
+  binance.textContent = '$' + BNB.toString().slice(0, 8);
 
   const usdcoin = document.getElementById("dovSatisUsdc");
-  usdcoin.textContent = '$' +USDC.toString().slice(0, 8) ;
+  usdcoin.textContent = '$' + USDC.toString().slice(0, 8);
 }
 
-function kriptoDegisim(btcDegisim, ethDegisim, usdtDegisim, bnbDegisim, usdcDegisim){
+function kriptoDegisim(btcDegisim, ethDegisim, usdtDegisim, bnbDegisim, usdcDegisim) {
   if (btcDegisim[0] == "-") {
     const bitcoinDegisim = document.getElementById("dovDegisimBtc");
     bitcoinDegisim.textContent = "%" + btcDegisim;
@@ -198,50 +198,50 @@ kriptoKuru(kriptoapi)
 
 const altinapi = 'https://api.genelpara.com/embed/altin.json'
 
-function altinKuru(altinapi){
+function altinKuru(altinapi) {
   fetch(altinapi).then((res) => res.json())
-  .then((data) => {
-    console.log(data);
+    .then((data) => {
+      console.log(data);
 
-    const GA = data.GA.satis
-    const CA = data.C.satis
-    const YA = data.Y.satis
-    const TA = data.T.satis
-    const ATA = data.ATA.satis;
+      const GA = data.GA.satis
+      const CA = data.C.satis
+      const YA = data.Y.satis
+      const TA = data.T.satis
+      const ATA = data.ATA.satis;
 
-    const GAdegisim = data.GA.degisim
-    const CAdegisim = data.C.degisim
-    const YAdegisim = data.Y.degisim
-    const TAdegisim = data.T.degisim
-    const ATAdegisim = data.ATA.degisim
+      const GAdegisim = data.GA.degisim
+      const CAdegisim = data.C.degisim
+      const YAdegisim = data.Y.degisim
+      const TAdegisim = data.T.degisim
+      const ATAdegisim = data.ATA.degisim
 
-    altinDegisim(GAdegisim, CAdegisim, YAdegisim, TAdegisim, ATAdegisim)
-    altinEkle(GA,CA,YA,TA,ATA)
-  
-  })
-  .catch((err) => console.warn(err));
+      altinDegisim(GAdegisim, CAdegisim, YAdegisim, TAdegisim, ATAdegisim)
+      altinEkle(GA, CA, YA, TA, ATA)
+
+    })
+    .catch((err) => console.warn(err));
 }
 
-function altinEkle(GA,CA,YA,TA,ATA){
+function altinEkle(GA, CA, YA, TA, ATA) {
   const gramaltin = document.getElementById('dovSatisG')
-  gramaltin.textContent = GA.toString().slice(0,6) + '₺';
+  gramaltin.textContent = GA.toString().slice(0, 6) + '₺';
 
   const ceyrekaltin = document.getElementById('dovSatisC')
-  ceyrekaltin.textContent = CA.toString().slice(0,7) + '₺'
-  
+  ceyrekaltin.textContent = CA.toString().slice(0, 7) + '₺'
+
   const yarimaltin = document.getElementById('dovSatisY')
-  yarimaltin.textContent = YA.toString().slice(0,7) + '₺'
+  yarimaltin.textContent = YA.toString().slice(0, 7) + '₺'
 
   const tamaltin = document.getElementById('dovSatisT')
-  tamaltin.textContent = TA.toString().slice(0,7) + '₺'
+  tamaltin.textContent = TA.toString().slice(0, 7) + '₺'
 
   const ataaltin = document.getElementById('dovSatisA')
-  ataaltin.textContent = ATA.toString().slice(0,7) + '₺'
+  ataaltin.textContent = ATA.toString().slice(0, 7) + '₺'
 
-  
+
 }
 
-function altinDegisim(GAdegisim, CAdegisim, YAdegisim, TAdegisim, ATAdegisim){
+function altinDegisim(GAdegisim, CAdegisim, YAdegisim, TAdegisim, ATAdegisim) {
   if (GAdegisim[0] == "-") {
     const gramDegisim = document.getElementById("dovDegisimG");
     gramDegisim.textContent = "%" + GAdegisim;
@@ -297,30 +297,31 @@ altinKuru(altinapi)
 
 const namazApi = 'https://api.genelpara.com/embed/namaz-vakitleri.json'
 
-function namazVakti(namazApi){
+function namazVakti(namazApi) {
   fetch(namazApi).then((res) => res.json())
-  .then((data) => {
-    console.log(data.ankara);
+    .then((data) => {
+      console.log(data.ankara);
 
-    const imsak = document.getElementById('imsak');
-    imsak.innerHTML = data.ankara.imsak
+      const imsak = document.getElementById('imsak');
+      imsak.innerHTML = data.ankara.imsak
 
-    const gunes = document.getElementById('gunes');
-    gunes.innerHTML = data.ankara.gunes
+      const gunes = document.getElementById('gunes');
+      gunes.innerHTML = data.ankara.gunes
 
-    const ogle = document.getElementById('ogle');
-    ogle.innerHTML = data.ankara.ogle
+      const ogle = document.getElementById('ogle');
+      ogle.innerHTML = data.ankara.ogle
 
-    const ikindi = document.getElementById('ikindi');
-    ikindi.innerHTML = data.ankara.ikindi
+      const ikindi = document.getElementById('ikindi');
+      ikindi.innerHTML = data.ankara.ikindi
 
-    const aksam = document.getElementById('aksam');
-    aksam.innerHTML = data.ankara.aksam
+      const aksam = document.getElementById('aksam');
+      aksam.innerHTML = data.ankara.aksam
 
-    const yatsi = document.getElementById('yatsi');
-    yatsi.innerHTML = data.ankara.yatsi
-  })
-  .catch((err) => console.warn(err));
+      const yatsi = document.getElementById('yatsi');
+      yatsi.innerHTML = data.ankara.yatsi
+    })
+    .catch((err) => console.warn(err));
 }
 //csa
 namazVakti(namazApi)
+

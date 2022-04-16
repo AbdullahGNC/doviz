@@ -39,7 +39,7 @@ function makeConvert() {
   };
   httpRequest.open(
     "GET",
-    "http://api.exchangeratesapi.io/v1/latest?access_key=5e4c405f557feeffbbe7a6b6adbfcd92&format=1"
+    "http://api.exchangeratesapi.io/v1/latest?access_key=eb09112ab9bc1225be8167494cdd6fe1"
   );
   httpRequest.send();
 }
