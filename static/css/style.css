@@ -113,7 +113,11 @@ b {
 
 #dovizTablo{
    margin-left: 110px;
+   text-align: center;
 }
 #altinTablo{
     margin-left: 110px;
+}
+#Grafik{
+    margin-left: 230px;
 }
