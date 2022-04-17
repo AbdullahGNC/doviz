@@ -111,13 +111,20 @@ b {
     height: 40px;
 }
 
-#dovizTablo{
+/* #dovizTablo{
    margin-left: 110px;
    text-align: center;
 }
 #altinTablo{
     margin-left: 110px;
-}
-#Grafik{
+} */
+/* #Grafik{
     margin-left: 230px;
+} */
+@media (max-width: 767.98px) 
+{
+    #Grafik{
+        margin-left: 0px;
+    }
 }
+
