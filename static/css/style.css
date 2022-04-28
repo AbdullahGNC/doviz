@@ -130,5 +130,9 @@ b {
 #frame{
     float: right;
     padding-top: 10px;
+    padding-right: 50px;
+}
+#cont{
+    margin-left: 200px;
 }
 
