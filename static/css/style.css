@@ -127,4 +127,8 @@ b {
         margin-left: 0px;
     }
 }
+#frame{
+    float: right;
+    padding-top: 10px;
+}
 
